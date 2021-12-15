@@ -1,0 +1,44 @@
+<!--Annabelle Tran West-MEC Coding Calculator assignment 11-8-21 HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <script type = "text/javascript" src = "javascript.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <!--Main body-->
+    <div class = "container">
+    <div class = "main">
+        <!--Input-->
+        <form name = "formcalc">
+            <input class = "answer" name = "answer">
+        </form>
+        <!--Buttons-->
+            <button value = "AC" onclick= "formcalc.answer.value = ' '" class = "AC">AC</button>
+            <button value = "tan" onclick= "formcalc.answer.value = Math.tan(formcalc.answer.value)" class = "tan">tan</button>
+            <button value = "sin" onclick= "formcalc.answer.value = Math.sin(formcalc.answer.value)" class = "sin">sin</button>
+            <button value = "cos" onclick= "formcalc.answer.value = Math.cos(formcalc.answer.value)" class = "cos">cos</button>
+            <button value = "1" onclick= "insert('1')" class = "one">1</button>
+            <button value = "2" onclick= "insert('2')" class = "two">2</button>
+            <button value = "3" onclick= "insert('3')" class = "three">3</button>
+            <button value = "+" onclick= "insert('+')" class = "add">+</button>
+            <button value = "4" onclick= "insert('4')" class = "four">4</button>
+            <button value = "5" onclick= "insert('5')" class = "five">5</button>
+            <button value = "6" onclick= "insert('6')" class = "six">6</button>
+            <button value = "-" onclick= "insert('-')" class = "subtract">-</button>
+            <button value = "7" onclick= "insert('7')" class = "seven">7</button>
+            <button value = "8" onclick= "insert('8')" class = "eight">8</button>
+            <button value = "9" onclick= "insert('9')" class = "nine">9</button>
+            <button value = "*" onclick= "insert('*')" class = "multiply">x</button>
+            <button value = "0" onclick= "insert('0')" class = "zero">0</button>
+            <button value = "." onclick= "insert('.')" class = "decimal">.</button>
+            <button value = "/" onclick= "insert('/')"class = "divide">/</button>
+            <button value = "=" onclick= "solve('=')" class = "equals">=</button>
+    </div>
+    </div>
+</body>
+</html>
